@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eileen Thompson Art</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <span class="menu-icon" onclick="toggleNav()">&#9776;</span>
+        <h1>Eileen Thompson Art</h1>
+        <div class="background-toggles">
+            <div class="background-1" onclick='changeBackground("1")'></div>
+            <div class="background-2" onclick='changeBackground("2")'></div>
+            <div class="background-3" onclick='changeBackground("3")'></div>
+        </div>
+    </header>
+
+    <nav id="sideNav" class="side-nav">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleNav()">&times;</a>
+        <a href="#home">Home</a>
+        <a href="#paintings">Paintings</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="image-div">
+            <img src="img/Art_1.jfif" alt="">
+            <div class="image-overlay"></div>
+        </div>
+        <div class="text-div">
+            <h2>Painting-1</h2>
+            <p>Text</p>
+            <a href="https://morphicfield.thrivecart.com/painting-1/" class="button-link">Buy now</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-div">
+            <img src="img/Art_2.jfif" alt="">
+            <div class="image-overlay"></div>
+        </div>
+        <div class="text-div">
+            <h2>Painting-2</h2>
+            <p>Text</p>
+            <a href="https://morphicfield.thrivecart.com/painting-1/" class="button-link">Buy now</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="image-div">
+            <img src="img/Art_3.jfif" alt="">
+            <div class="image-overlay"></div>
+        </div>
+        <div class="text-div">
+            <h2>Painting-3</h2>
+            <p>Text</p>
+            <a href="https://morphicfield.thrivecart.com/painting-1/" class="button-link">Buy now</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h1 class="copyright">&copy Eileen Thompson</h1>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
