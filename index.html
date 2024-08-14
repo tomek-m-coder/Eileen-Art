@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <span class="menu-icon" onclick="toggleNav()">&#9776;</span>
         <h1>Eileen Thompson Art</h1>
         <div class="background-toggles">
@@ -16,7 +16,9 @@
             <div class="background-3" onclick='changeBackground("3")'></div>
         </div>
     </header>
-
+    <div>
+        <h1>Hi i am Eileen</h1>
+    </div>
     <nav id="sideNav" class="side-nav">
         <a href="javascript:void(0)" class="close-btn" onclick="toggleNav()">&times;</a>
         <a href="#home">Home</a>
@@ -24,7 +26,7 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <div class="container">
+    <div id="paintings" class="container">
         <div class="image-div">
             <img src="img/Art_1.jfif" alt="">
             <div class="image-overlay"></div>
@@ -32,7 +34,7 @@
         <div class="text-div">
             <h2>Painting-1</h2>
             <p>Text</p>
-            <a href="https://morphicfield.thrivecart.com/painting-1/" class="button-link">Buy now</a>
+            <a href="https://morphicfield.thrivecart.com/painting-1/" target="_blank" class="button-link">Buy now</a>
         </div>
     </div>
 
@@ -44,7 +46,7 @@
         <div class="text-div">
             <h2>Painting-2</h2>
             <p>Text</p>
-            <a href="https://morphicfield.thrivecart.com/painting-1/" class="button-link">Buy now</a>
+            <a href="https://morphicfield.thrivecart.com/painting-1/" target="_blank" class="button-link">Buy now</a>
         </div>
     </div>
 
@@ -56,12 +58,18 @@
         <div class="text-div">
             <h2>Painting-3</h2>
             <p>Text</p>
-            <a href="https://morphicfield.thrivecart.com/painting-1/" class="button-link">Buy now</a>
+            <a href="https://morphicfield.thrivecart.com/painting-1/" target="_blank" class="button-link">Buy now</a>
         </div>
     </div>
-
+    
+    <div id="contact" class="social-media">
+        <a href="https://github.com/tomek-m-coder/" target="_blank" class="hvr-sink"><i class="fab fa-github">&nbsp; <p>GitHub</p></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="mailto:eileenthomson@gmail.com" class="hvr-sink"><i class="fas fa-at">&nbsp; <p>E-mail</p></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="tel:000-000-000" class="hvr-sink"><i class="fas fa-mobile-alt">&nbsp; <p>Phone</p></i></a>
+    </div>
+    
     <footer class="footer">
-        <h1 class="copyright">&copy Eileen Thomson</h1>
+        <h1 class="copyright">&copy Eileen Thomson | 2024</h1>
     </footer>
 
     <script src="app.js"></script>
