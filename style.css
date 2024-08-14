@@ -5,17 +5,17 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f9f9f9;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    overflow-x: hidden; /* Zapewnia brak poziomego przewijania */
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
 }
 
 header {
     width: 100%;
-    padding: 10px 20px;
-    background-color: #bf90e6;
-    color: white;
+    padding: 15px 30px;
+    background-color: #ff6f61;
+    color: #fff;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
@@ -23,11 +23,11 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    height: 60px;
+    height: 70px;
     line-height: 20px;
     margin-bottom: 20px;
-    box-sizing: border-box; /* Zapewnia, że padding nie rozszerza elementu */
-    overflow: hidden; /* Zapewnia, że nic nie wystaje poza element */
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 h1 {
@@ -47,7 +47,7 @@ h1 {
     display: flex;
     gap: 10px;
     margin-right: 15px;
-    box-sizing: border-box; /* Zapewnia, że margines nie wpływa na rozmiar elementu */
+    box-sizing: border-box;
 }
 
 .background-1, .background-2, .background-3 {
@@ -55,18 +55,19 @@ h1 {
     height: 30px;
     border-radius: 50%;
     cursor: pointer;
+    border: 2px solid #ff6f61;
 }
 
 .background-1 {
-    background-color: #f1f1f2;
+    background-color: #a2c2e6;
 }
 
 .background-2 {
-    background: linear-gradient(to bottom, #eaeaea, #ada996);
+    background: linear-gradient(to bottom, #ffb347, #ffcc33);
 }
 
 .background-3 {
-    background: linear-gradient(to bottom, #faffd1, #a1ffce);
+    background: linear-gradient(to bottom, #a8e0ff, #b3f2ff);
 }
 
 .side-nav {
@@ -75,7 +76,7 @@ h1 {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #ff6f61;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -84,10 +85,10 @@ h1 {
 }
 
 .side-nav a {
-    padding: 10px 15px;
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 25px;
-    color: white;
+    font-size: 20px;
+    color: #fff;
     display: block;
     transition: 0.3s;
     display: flex;
@@ -95,7 +96,7 @@ h1 {
 }
 
 .side-nav a:hover {
-    background-color: #575757;
+    background-color: #e65c5c;
 }
 
 .side-nav .close-btn {
@@ -108,11 +109,11 @@ h1 {
 
 .container {
     display: flex;
-    width: 60%;
+    width: 70%;
     height: 60vh;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Zapewnia, że padding i margin nie wpływają na szerokość elementu */
+    box-sizing: border-box;
 }
 
 .image-div, .text-div {
@@ -133,8 +134,8 @@ h1 {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: white;
-    color: black;
+    background-color: #fff;
+    color: #333;
     text-align: center;
 }
 
@@ -149,17 +150,17 @@ h1 {
 }
 
 .container:hover .image-div .image-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .container:hover .text-div {
-    background-color: black;
-    color: white;
+    background-color: #ff6f61;
+    color: #fff;
 }
 
 footer {
     height: 60px;
-    background-color: #bf90e6;
+    background-color: #ff6f61;
     width: 100%;
     margin-bottom: 0;
     display: flex;
@@ -167,12 +168,24 @@ footer {
     align-items: center; 
     padding: 0px; 
     text-align: center; 
-    box-sizing: border-box; /* Zapewnia, że padding nie rozszerza elementu */
+    box-sizing: border-box;
 }
 
 .copyright {
     font-size: 20px;
-    color: #ddd;
+    color: #fff;
+}
+
+.icon-link {
+    color: #333;
+    font-size: 24px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.icon-link:hover {
+    color: #ff6f61;
 }
 
 @media (max-width: 768px) {
@@ -187,11 +200,11 @@ footer {
     }
 
     .side-nav {
-        width: 30%; /* Jeszcze bardziej zmniejszamy szerokość side-nav na mniejszych ekranach */
+        width: 30%;
     }
 
     .background-toggles {
-        margin-right: 10px; /* Przesuwa kropki bardziej w prawo w headerze */
+        margin-right: 10px;
     }
 }
 
@@ -209,7 +222,7 @@ footer {
 .button-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #08b625;
+    background-color: #ff5722;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -218,10 +231,10 @@ footer {
 }
 
 .button-link:hover {
-    background-color: #444;
+    background-color: #e64a19;
 }
 
-.social-media{
+.social-media {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -231,11 +244,11 @@ footer {
     margin-bottom: 10px;
 }
 
-.social-media a{
-    color: black;
+.social-media a {
+    color: #333;
 }
 
-.social-media p{
+.social-media p {
     display: inline;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
