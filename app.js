@@ -16,9 +16,9 @@ function changeBackground(color) {
 // Funkcja do przełączania widoczności menu nawigacyjnego
 function toggleNav() {
     const sideNav = document.getElementById("sideNav");
-    if (sideNav.style.width === "250px") {
+    if (sideNav.style.width === "250px" || sideNav.style.width === "30%") {
         sideNav.style.width = "0";
     } else {
-        sideNav.style.width = "250px";
+        sideNav.style.width = window.innerWidth <= 768 ? "30%" : "250px";
     }
 }
