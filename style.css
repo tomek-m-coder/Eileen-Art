@@ -401,15 +401,11 @@ footer {
 .icon-link:hover {
     color: var(--button-color);
 }
-#home{
-    height:100vh !important;
-}
+
 #gallery{
     height:100vh !important;
 }
-#contact{
-    height:100vh !important;
-}
+
 @media (max-width: 934px) {
     .hero {
         flex-direction: column;
@@ -512,12 +508,7 @@ footer {
     transform: none;
     transition: none;
 }
-#home{
-    height:100vh !important;
-}
+
 #gallery{
-    height:100vh !important;
-}
-#contact{
     height:100vh !important;
 }
