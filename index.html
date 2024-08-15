@@ -1,78 +1,141 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eileen Thomson Art</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <!-- Link do Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="app.js" defer></script>
 </head>
+
 <body>
-    <header id="home">
-        <span class="menu-icon" onclick="toggleNav()">&#9776;</span>
-        <h1>Eileen Thomson Art</h1>
-        <div class="background-toggles">
-            <div class="background-1" onclick='changeBackground("1")'></div>
-            <div class="background-2" onclick='changeBackground("2")'></div>
-            <div class="background-3" onclick='changeBackground("3")'></div>
-        </div>
+    <header>
+        <nav>
+            <a href="#" style="color: #f5f5f7; text-decoration: none; font-size: 21px; font-weight: 600;">ET Art</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <div>
-        <h1>Hi i am Eileen</h1>
-    </div>
-    <nav id="sideNav" class="side-nav">
-        <a href="javascript:void(0)" class="close-btn" onclick="toggleNav()">&times;</a>
-        <a href="#home">Home</a>
-        <a href="#paintings">Paintings</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <main>
+        <section class="hero">
+            <div class="hero-background">
+                <p id="home"></p>
+            </div>
 
-    <div id="paintings" class="container">
-        <div class="image-div">
-            <img src="img/Art_1.jfif" alt="">
-            <div class="image-overlay"></div>
-        </div>
-        <div class="text-div">
-            <h2>Painting-1</h2>
-            <p>Painting specification and price if you want</p>
-            <a href="https://morphicfield.thrivecart.com/painting-1/" target="_blank" class="button-link">Buy now</a>
-        </div>
+            <div class="hero-content">
+                <h1 class="main-text">Eileen Thomson Art</h1>
+                <h2>Welcome to My Personal Gallery</h2>
+                <p class="artist-statement">I'm Eileen Thomson, an abstract artist who specializes in fluid media. Each
+                    artwork I create is a unique expression, crafted with techniques that bring vibrant, dynamic pieces
+                    to life on your wall.</p>
+                <p class="hero-description">The beauty of fluid art lies in its one-of-a-kind nature, with bright,
+                    engaging colors that resonate deeply within any space. Every color palette is carefully chosen to add
+                    a special touch to your home, creating an atmosphere that few other elements can match.</p>
+                <div class="hero-cta">
+                    <a href="#gallery" class="btn btn-primary">Explore Gallery <i class="fas fa-palette"></i></a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch <i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/Author_1.jpg" alt="Eileen Thomson's Art" class="main-image">
+                <div class="image-collage">
+                    <a href="https://morphicfield.thrivecart.com/painting-1/" target="_blank"><img
+                            src="img/Art_1.jpg" alt="Artwork sample 1" class="collage-item"></a>
+                    <a href="https://morphicfield.thrivecart.com/painting-1/" target="_blank"><img
+                            src="img/Art_2.jpg" alt="Artwork sample 2" class="collage-item"></a>
+                    <a href="https://morphicfield.thrivecart.com/painting-1/" target="_blank"><img
+                            src="img/Art_3.jpg" alt="Artwork sample 3" class="collage-item"></a>
+                    <a href="https://morphicfield.thrivecart.com/painting-1/" target="_blank"><img
+                            src="img/Art_4.jpg" alt="Artwork sample 4" class="collage-item"></a>
+                </div>
+            </div>
+        </section>
+        <h1>Paintings Gallery</h1>
+        <p id="gallery"></p>
+        <div class="gallery-wrapper">
+            <button class="gallery-nav prev"><i class="fas fa-chevron-left"></i></button>
+            <section class="gallery">
+                <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="img/Art_1.jpg" alt="Urban Rhythm">
+                    <div class="gallery-item-content">
+                        <h3>Eternal Flame</h3>
+                        <p>Capture the energy of city life with this dynamic piece.</p>
+                        <a href="https://morphicfield.thrivecart.com/painting-1/" target="_blank" class="btn">Buy Now <i
+                                class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Art_2.jpg" alt="Nature's Embrace">
+                    <div class="gallery-item-content">
+                        <h3>Phosphorescent Earth</h3>
+                        <p>Bring the outdoors in with this lush, verdant landscape.</p>
+                        <a href="https://morphicfield.thrivecart.com/painting-1/" target="_blank" class="btn">Buy Now <i
+                                class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Art_3.jpg" alt="Serene Horizons">
+                    <div class="gallery-item-content">
+                        <h3>Nature's Dance</h3>
+                        <p>A calming seascape that brings tranquility to any room.</p>
+                        <a href="https://morphicfield.thrivecart.com/painting-1/" target="_blank" class="btn">Buy Now <i
+                                class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Art_4.jpg" alt="Urban Rhythm">
+                    <div class="gallery-item-content">
+                        <h3>Celestial Harmony</h3>
+                        <p>Capture the energy of city life with this dynamic piece.</p>
+                        <a href="https://morphicfield.thrivecart.com/painting-1/" target="_blank" class="btn">Buy Now <i
+                                class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button class="gallery-nav next"><i class="fas fa-chevron-right"></i></button>
     </div>
 
-    <div class="container">
-        <div class="image-div">
-            <img src="img/Art_2.jfif" alt="">
-            <div class="image-overlay"></div>
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <form action="https://formspree.io/f/manwbqwq" method="POST" target="_blank" id="contact-form">
+                <div class="input-control i-c-2">
+                    <input type="text" name="name" required placeholder="Your Name">
+                    <input type="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="input-control">
+                    <input type="text" name="subject" required placeholder="Subject">
+                </div>
+                <div class="input-control">
+                    <textarea name="message" cols="15" rows="8" required placeholder="Message"></textarea>
+                </div>
+                <div class="submit-btn">
+                    <button type="submit" class="btn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/eileen.thomson.796" target="_blank" class="icon-link"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/morphic_world_power?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwY2xjawEpf7lleHRuA2FlbQIxMAABHf_4d7xtpQnv3irqVPRVCJzUK1jYCNiSRJjbUwrxe55oqCaX4OpmWncvBA_aem_YOwN7qn-RwI2k5VOJAE_HQ"
+                target="_blank" class="icon-link"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:epthomson64@gmail.com" class="icon-link"><i class="fas fa-envelope"></i></a>
+            <a href="tel:000-000-000" class="icon-link"><i class="fas fa-mobile-alt"></i></a>
         </div>
-        <div class="text-div">
-            <h2>Painting-2</h2>
-            <p>Painting specification and price if you want</p>
-            <a href="https://morphicfield.thrivecart.com/painting-1/" target="_blank" class="button-link">Buy now</a>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="image-div">
-            <img src="img/Art_3.jfif" alt="">
-            <div class="image-overlay"></div>
-        </div>
-        <div class="text-div">
-            <h2>Painting-3</h2>
-            <p>Painting specification and price if you want</p>
-            <a href="https://morphicfield.thrivecart.com/painting-1/" target="_blank" class="button-link">Buy now</a>
-        </div>
-    </div>
-    <div id="contact" class="social-media">
-        <a href="https://www.facebook.com/eileen.thomson.796" target="_blank" class="icon-link"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/morphic_world_power?igshid=OGQ5ZDc2ODk2ZA%3D%3D&fbclid=IwY2xjawEpf7lleHRuA2FlbQIxMAABHf_4d7xtpQnv3irqVPRVCJzUK1jYCNiSRJjbUwrxe55oqCaX4OpmWncvBA_aem_YOwN7qn-RwI2k5VOJAE_HQ" target="_blank" class="icon-link"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:eileenthomson@gmail.com" class="icon-link"><i class="fas fa-envelope"></i></a>
-        <a href="tel:000-000-000" class="icon-link"><i class="fas fa-mobile-alt"></i></a>
-    </div>
-    <footer class="footer">
-        <h1 class="copyright">&copy Eileen Thomson | 2024</h1>
+        <p>&copy; 2024 Eileen Thomson Art. All rights reserved.</p>
     </footer>
-
-    <script src="app.js"></script>
 </body>
+
 </html>
