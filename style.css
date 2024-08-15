@@ -189,15 +189,27 @@ main {
 }
 
 .gallery-item {
+    position: relative;
     flex: 0 0 calc(33.333% - 27px);
     background-color: var(--secondary-color);
     border-radius: 18px;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
+}
+
+.price-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .gallery-item:hover {
-    transform: scale(1.02);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
@@ -206,6 +218,11 @@ main {
     height: 300px;
     object-fit: cover;
     display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.02);
 }
 
 .gallery-item-content {
@@ -456,4 +473,34 @@ footer {
 
 .main-text {
     padding-bottom: 20px;
+}
+.price-tag {
+    position: absolute;
+    top: 10px;
+    right: -15px;
+    background-color: #f0ad4e;
+    color: black;
+    padding: 5px 10px;
+    font-weight: bold;
+    z-index: 100;
+    width: 100px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+    clip-path: polygon(75% 0%, 44% 51%, 75% 100%, 0% 100%, 0 52%, 0% 0%);
+    pointer-events: none;
+}
+
+.price-tag span {
+    font-size: 16px; /* Reduced from 48px to fit better in the smaller tag */
+    pointer-events: none;
+}
+
+/* Remove any hover effects that might be affecting the price tag */
+.gallery-item:hover .price-tag,
+.gallery-item:hover .price-tag span {
+    transform: none;
+    transition: none;
 }
